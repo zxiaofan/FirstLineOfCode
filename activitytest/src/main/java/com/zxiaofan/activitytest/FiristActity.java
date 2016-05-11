@@ -2,6 +2,7 @@ package com.zxiaofan.activitytest;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +30,10 @@ public class FiristActity extends Activity {
 //                Toast.makeText(FiristActity.this, "You Click Me!", Toast.LENGTH_SHORT).show();
 //                finish();
 //                Intent intent = new Intent(FiristActity.this, SecondActivity.class); // 显示Intent
-                Intent intent = new Intent("com.zxiaofan.activitytest.ACTION_START");
+//                Intent intent = new Intent("com.zxiaofan.activitytest.ACTION_START");
+//                intent.addCategory("com.zxiaofan.activitytest.MY_CATEGORY"); //隐式Intent
+                Intent intent=new Intent(Intent.ACTION_VIEW); // 调用系统浏览器
+                intent.setData(Uri.parse("http://www.baidu.com"));
                 startActivity(intent);
             }
         });
