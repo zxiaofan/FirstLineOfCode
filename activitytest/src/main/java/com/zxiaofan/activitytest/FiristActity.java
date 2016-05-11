@@ -18,10 +18,13 @@ import zxiaofan.com.activitytest.R;
 /**
  * Created by lenovo on 2016/5/10.
  */
-public class FiristActity extends Activity {
+public class FiristActity extends BaseActivity {
+    String TAG = "FiristActity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "Task id is:" + getTaskId());
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.first_layout);
         Button button1 = (Button) findViewById(R.id.button_1);
@@ -44,8 +47,14 @@ public class FiristActity extends Activity {
 //                intent.putExtra("extra_data",data);
 //                startActivity(intent);
                 // 返回数据给上一个活动
-                Intent intent = new Intent(FiristActity.this, SecondActivity.class);
-                startActivityForResult(intent, 1);
+//                Intent intent = new Intent(FiristActity.this, SecondActivity.class);
+//                startActivityForResult(intent, 1);
+                // 研究standard模式(First,First)
+                // singTask模式（First,Second）
+//                Intent intent = new Intent(FiristActity.this, SecondActivity.class);
+//                startActivity(intent);
+                // 一行代码启动SecondActivity，包括传参
+                SecondActivity.actionStart(FiristActity.this, "data1", "data2");
             }
         });
     }
@@ -57,7 +66,7 @@ public class FiristActity extends Activity {
             case 1: // 检查requestCode判断数据源（确实是从SecondActivity传来的）
                 if (resultCode == RESULT_OK) { // resultCode 判断处理是否成功
                     String returnData = data.getStringExtra("data_return");
-                    Log.d("FiristActivity", returnData);
+                    Log.d(TAG, returnData);
                 }
                 break;
             default:
@@ -82,5 +91,11 @@ public class FiristActity extends Activity {
             default:
         }
         return true;
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onResart");
     }
 }
