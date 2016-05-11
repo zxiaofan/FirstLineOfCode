@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,11 +33,35 @@ public class FiristActity extends Activity {
 //                Intent intent = new Intent(FiristActity.this, SecondActivity.class); // 显示Intent
 //                Intent intent = new Intent("com.zxiaofan.activitytest.ACTION_START");
 //                intent.addCategory("com.zxiaofan.activitytest.MY_CATEGORY"); //隐式Intent
-                Intent intent=new Intent(Intent.ACTION_VIEW); // 调用系统浏览器
-                intent.setData(Uri.parse("http://www.baidu.com"));
-                startActivity(intent);
+//                Intent intent=new Intent(Intent.ACTION_VIEW); // 调用系统浏览器
+//                intent.setData(Uri.parse("http://www.baidu.com"));
+                // 调用系统拨号界面
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//                intent.setData(Uri.parse("tel:1008611"));
+                // Intent向下一个活动传递数据
+//                String data="Hello Second";
+//                Intent intent=new Intent(FiristActity.this,SecondActivity.class);
+//                intent.putExtra("extra_data",data);
+//                startActivity(intent);
+                // 返回数据给上一个活动
+                Intent intent = new Intent(FiristActity.this, SecondActivity.class);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+
+    @Override
+    // onActi 即自动补全
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 1: // 检查requestCode判断数据源（确实是从SecondActivity传来的）
+                if (resultCode == RESULT_OK) { // resultCode 判断处理是否成功
+                    String returnData = data.getStringExtra("data_return");
+                    Log.d("FiristActivity", returnData);
+                }
+                break;
+            default:
+        }
     }
 
     @Override
