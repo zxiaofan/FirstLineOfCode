@@ -29,7 +29,7 @@ public class FiristActity extends Activity {
 //                Toast.makeText(FiristActity.this, "You Click Me!", Toast.LENGTH_SHORT).show();
 //                finish();
 //                Intent intent = new Intent(FiristActity.this, SecondActivity.class); // 显示Intent
-                Intent intent = new Intent("com.example.yunhai.activitytest.ACTION_START");
+                Intent intent = new Intent("com.zxiaofan.activitytest.ACTION_START");
                 startActivity(intent);
             }
         });

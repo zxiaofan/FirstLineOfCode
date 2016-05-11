@@ -17,7 +17,7 @@
         </activity>
         <activity android:name="com.zxiaofan.activitytest.SecondActivity">
             <intent-filter>
-                <action android:name="com.example.yunhai.activitytest.ACTION_START"/>
+                <action android:name="com.zxiaofan.activitytest.ACTION_START"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
