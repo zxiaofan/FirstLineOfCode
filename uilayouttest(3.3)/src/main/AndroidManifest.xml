@@ -13,6 +13,7 @@
         </activity>
         <activity android:name=".RelativeLayout"/>
         <activity android:name=".FrameLayout"/>
+        <activity android:name=".TableLayout"/>
     </application>
 
 </manifest>

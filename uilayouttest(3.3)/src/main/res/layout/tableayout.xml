@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TableLayout 允许我们使用表格的方式来排列控件-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Account:" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:hint="Input your account" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Password:" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <TableRow>
+        <!--android:layout_span="2"让登录按钮占据两列的空间-->
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Login" />
+    </TableRow>
+</TableLayout>
