@@ -11,12 +11,12 @@
     android:orientation="horizontal">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_RelativeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_weight="1"
-        android:text="Button 1" />
+        android:text="Button RelativeLayout" />
 
     <Button
         android:id="@+id/button2"
