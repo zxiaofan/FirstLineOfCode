@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout又称线性布局。将控件在线性方向依次排列-->
+<!--orientation="vertical"表示垂直方向；horizontal表示水平方向。-->
+<!--注意:horizontal时,不能将内部控件宽度指定为match_parent,因为单独一个控件将把屏幕铺满:vertical时,高度不能match_parent-->
+<!--android:gravity 是用于指定文字在控件中的对齐方式，而android:layout_gravity 是用于指定控件在布局中的对齐方式-->
+<!--注意:horizontal时,仅垂直方向上的对齐方式才会生效，因水平方向上的长度是不固定的,每加一个控件,水平方向上长度都会改变,vertical同理-->
+<!--android:layout_weight:使用比例的方式来指定控件的大小-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:text="Button 1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="Button 2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="8"
+        android:text="Button 3" />
+</LinearLayout>

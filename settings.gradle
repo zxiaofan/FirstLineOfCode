@@ -1,1 +1,1 @@
-include ':activitytest', ':activitylifecycletest', ':uiwidgettest(3.2)'
+include ':activitytest', ':activitylifecycletest', ':uiwidgettest(3.2)', ':uilayouttest(3.3)'

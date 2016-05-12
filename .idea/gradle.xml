@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitylifecycletest" />
             <option value="$PROJECT_DIR$/activitytest" />
+            <option value="$PROJECT_DIR$/uilayouttest(3.3)" />
             <option value="$PROJECT_DIR$/uiwidgettest(3.2)" />
           </set>
         </option>
@@ -19,6 +20,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitylifecycletest" />
             <option value="$PROJECT_DIR$/activitytest" />
+            <option value="$PROJECT_DIR$/uilayouttest(3.3)" />
             <option value="$PROJECT_DIR$/uiwidgettest(3.2)" />
           </set>
         </option>
