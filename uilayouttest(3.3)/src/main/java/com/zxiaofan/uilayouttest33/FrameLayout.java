@@ -6,11 +6,10 @@ import android.os.Bundle;
 /**
  * Created by yunhai on 2016/5/12.
  */
-public class RelativeLayout extends Activity{
+public class FrameLayout extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.relativelayout);
+        setContentView(R.layout.framelayout);
     }
-
 }
