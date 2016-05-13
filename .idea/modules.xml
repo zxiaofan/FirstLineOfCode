@@ -7,10 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/activitylifecycletest/activitylifecycletest.iml" filepath="$PROJECT_DIR$/activitylifecycletest/activitylifecycletest.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitytest/activitytest.iml" filepath="$PROJECT_DIR$/activitytest/activitytest.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitytest/activitytest.iml" filepath="$PROJECT_DIR$/activitytest/activitytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uibestpractice(3.7)/uibestpractice(3.7).iml" filepath="$PROJECT_DIR$/uibestpractice(3.7)/uibestpractice(3.7).iml" />
       <module fileurl="file://$PROJECT_DIR$/uicustomviews(3.4)/uicustomviews(3.4).iml" filepath="$PROJECT_DIR$/uicustomviews(3.4)/uicustomviews(3.4).iml" />
       <module fileurl="file://$PROJECT_DIR$/uilayouttest(3.3)/uilayouttest(3.3).iml" filepath="$PROJECT_DIR$/uilayouttest(3.3)/uilayouttest(3.3).iml" />
       <module fileurl="file://$PROJECT_DIR$/uilayouttest(3.3)/uilayouttest(3.3).iml" filepath="$PROJECT_DIR$/uilayouttest(3.3)/uilayouttest(3.3).iml" />
       <module fileurl="file://$PROJECT_DIR$/uilistviewtest(3.5)/uilistviewtest(3.5).iml" filepath="$PROJECT_DIR$/uilistviewtest(3.5)/uilistviewtest(3.5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/uisizetest(3.6)/uisizetest(3.6).iml" filepath="$PROJECT_DIR$/uisizetest(3.6)/uisizetest(3.6).iml" />
       <module fileurl="file://$PROJECT_DIR$/uiwidgettest(3.2)/uiwidgettest(3.2).iml" filepath="$PROJECT_DIR$/uiwidgettest(3.2)/uiwidgettest(3.2).iml" />
       <module fileurl="file://$PROJECT_DIR$/uiwidgettest(3.2)/uiwidgettest(3.2).iml" filepath="$PROJECT_DIR$/uiwidgettest(3.2)/uiwidgettest(3.2).iml" />
     </modules>
