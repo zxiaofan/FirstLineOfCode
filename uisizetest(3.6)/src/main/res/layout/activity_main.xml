@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--px 是像素的意思，即屏幕中可以显示的最小元素单元;pt 是磅数的意思，1 磅等于1/72 英寸，一般pt 都会作为字体的单位来使用。-->
+
+<!--手机由于屏幕分辨率问题，px、pt单位无法适应-->
+
+<!--dp 是密度无关像素的意思，也被称作dip，和px 相比，它在不同密度的屏幕中的显示比例将保持一致。-->
+
+<!--sp 是可伸缩像素的意思，它采用了和dp 同样的设计理念，解决了文字大小的适配问题。-->
+
+<!--Android 中的密度就是屏幕每英寸所包含的像素数，通常以dpi 为单位。比如一个手机屏幕的宽是2 英寸长是3 英寸，如果
+它的分辨率是320*480 像素，那这个屏幕的密度就是160dpi，如果它的分辨率是640*960，那这个屏幕的密度就是320dpi，因此密度值越高的屏幕显示的效果就越精细。-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        />
+</LinearLayout>
